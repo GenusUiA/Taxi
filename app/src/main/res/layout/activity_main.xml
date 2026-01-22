@@ -5,15 +5,115 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/Taxi"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:text="      Taxi"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Telephone Number Row -->
+    <TextView
+        android:id="@+id/WrittenPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Telephone number"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/Taxi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Phone"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenPhone"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenPhone"
+        app:layout_constraintStart_toEndOf="@id/WrittenPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <!-- Name Row -->
+    <TextView
+        android:id="@+id/WrittenName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Name"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenName"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenName"
+        app:layout_constraintStart_toEndOf="@id/WrittenName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <!-- Surname Row -->
+    <TextView
+        android:id="@+id/WrittenSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Surname"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Surname"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <EditText
+        android:id="@+id/Surname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenSurname"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenSurname"
+        app:layout_constraintStart_toEndOf="@id/WrittenSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.45"/>
+
+    <Button
+        android:id="@+id/ButtonReg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/gray_dark"
+        app:layout_constraintTop_toBottomOf="@id/WrittenSurname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
