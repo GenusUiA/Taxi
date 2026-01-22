@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/Taxi"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:text="      Taxi"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Point From -->
+    <TextView
+        android:id="@+id/Point_from"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Point From"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/Taxi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Street From -->
+    <TextView
+        android:id="@+id/WrittenStreetFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/Point_from"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/StreetFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenStreetFrom"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenStreetFrom"
+        app:layout_constraintStart_toEndOf="@id/WrittenStreetFrom"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- House From -->
+    <TextView
+        android:id="@+id/WrittenHouseFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenStreetFrom"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/HouseFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenHouseFrom"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenHouseFrom"
+        app:layout_constraintStart_toEndOf="@id/WrittenHouseFrom"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Flat From -->
+    <TextView
+        android:id="@+id/WrittenFlatFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenHouseFrom"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/FlatFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenFlatFrom"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenFlatFrom"
+        app:layout_constraintStart_toEndOf="@id/WrittenFlatFrom"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Point To -->
+    <TextView
+        android:id="@+id/Point_to"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Point To"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenFlatFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Street To -->
+    <TextView
+        android:id="@+id/WrittenStreetTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/Point_to"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/StreetTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenStreetTo"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenStreetTo"
+        app:layout_constraintStart_toEndOf="@id/WrittenStreetTo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- House To -->
+    <TextView
+        android:id="@+id/WrittenHouseTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenStreetTo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/HouseTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenHouseTo"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenHouseTo"
+        app:layout_constraintStart_toEndOf="@id/WrittenHouseTo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Flat To -->
+    <TextView
+        android:id="@+id/WrittenFlatTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenHouseTo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/FlatTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/WrittenFlatTo"
+        app:layout_constraintBottom_toBottomOf="@id/WrittenFlatTo"
+        app:layout_constraintStart_toEndOf="@id/WrittenFlatTo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/ButtonOK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/gray_dark"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/WrittenFlatTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
